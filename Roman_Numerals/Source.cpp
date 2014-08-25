@@ -46,77 +46,75 @@ int main(int argc, char *argv[])
 			{
 				roman_numeral << "M";
 				number -= 1000;
-				continue; // For multiples of 1000
 			}
 			// 900 - CM
-			if (number >= 900)
+			else if (number >= 900)
 			{
 				roman_numeral << "CM";
 				number -= 900;
 			}
 			// 500 - D
-			if (number >= 500)
+			else if (number >= 500)
 			{
 				roman_numeral << "D";
 				number -= 500;
 			}
 			// 400 - CD
-			if (number >= 400)
+			else if (number >= 400)
 			{
 				roman_numeral << "CD";
 				number -= 400;
 			}
 			// 100 - C
-			if (number >= 100)
+			else if (number >= 100)
 			{
 				roman_numeral << "C";
 				number -= 100;
-				continue; // For multiples of 100
 			}
 			// 90 - XC
-			if (number >= 90)
+			else if (number >= 90)
 			{
 				roman_numeral << "XC";
 				number -= 90;
 			}
 			// 50 - L
-			if (number >= 50)
+			else if (number >= 50)
 			{
 				roman_numeral << "L";
 				number -= 50;
 			}
 			// 40 - XL
-			if (number >= 40)
+			else if (number >= 40)
 			{
 				roman_numeral << "XL";
 				number -= 40;
 			}
 			// 10 - X
-			if (number >= 10)
+			else if (number >= 10)
 			{
 				roman_numeral << "X";
 				number -= 10;
 			}
 			// 9 - IX
-			if (number == 9)
+			else if (number == 9)
 			{
 				roman_numeral << "IX";
 				number -= 9;
 			}
 			// 5 - V
-			if (number >= 5)
+			else if (number >= 5)
 			{
 				roman_numeral << "V";
 				number -= 5;
 			}
 			// 4 - IV
-			if (number == 4)
+			else if (number == 4)
 			{
 				roman_numeral << "IV";
 				number -= 4;
 			}
 			// 1 - I
-			if (number >= 1)
+			else if (number >= 1)
 			{
 				roman_numeral << "I";
 				number -= 1;
